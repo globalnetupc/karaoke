@@ -1,0 +1,38 @@
+<div class="page-header">
+  <%= link_to songs_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_song_path(@song), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show song</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Song:</dt>
+  <dd><%= @song.song_id %></dd>
+
+  <dt>Name:</dt>
+  <dd><%= @song.name %></dd>
+
+  <dt>Singer band:</dt>
+  <dd><%= @song.singer_band %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @song.description %></dd>
+
+  <dt>Duration:</dt>
+  <dd><%= @song.duration %></dd>
+
+  <dt>Genere:</dt>
+  <dd><%= @song.genere_id %></dd>
+
+  <dt>Code:</dt>
+  <dd><%= @song.code %></dd>
+
+  <dt>Rate:</dt>
+  <dd><%= @song.rate %></dd>
+
+</dl>
