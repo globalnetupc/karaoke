@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  dni: 1
+  userName: MyString
+  firstName: MyString
+  lastName: MyString
+  email: MyString
+  group_id: 1
+  dateIn: 2016-09-08
+  dateOut: 2016-09-08
+  password: MyString
+  isValid: false
+  languageIt: MyString
+  validationOrigin: 1
+  isSystemUser: false
+
+two:
+  id: 
+  dni: 1
+  userName: MyString
+  firstName: MyString
+  lastName: MyString
+  email: MyString
+  group_id: 1
+  dateIn: 2016-09-08
+  dateOut: 2016-09-08
+  password: MyString
+  isValid: false
+  languageIt: MyString
+  validationOrigin: 1
+  isSystemUser: false

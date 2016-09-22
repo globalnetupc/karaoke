@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Box:</strong>
+  <%= @box.box_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @box.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @box.description %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @box.location_id %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @box.phone %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @box.score %>
+</p>
+
+<p>
+  <strong>Bussy:</strong>
+  <%= @box.bussy %>
+</p>
+
+<%= link_to 'Edit', edit_box_path(@box) %> |
+<%= link_to 'Back', boxes_path %>

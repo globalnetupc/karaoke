@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @employee.id %>
+</p>
+
+<p>
+  <strong>Dni:</strong>
+  <%= @employee.dni %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @employee.userName %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @employee.firstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @employee.lastName %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @employee.email %>
+</p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @employee.group_id %>
+</p>
+
+<p>
+  <strong>Datein:</strong>
+  <%= @employee.dateIn %>
+</p>
+
+<p>
+  <strong>Dateout:</strong>
+  <%= @employee.dateOut %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @employee.password %>
+</p>
+
+<p>
+  <strong>Isvalid:</strong>
+  <%= @employee.isValid %>
+</p>
+
+<p>
+  <strong>Languageit:</strong>
+  <%= @employee.languageIt %>
+</p>
+
+<p>
+  <strong>Validationorigin:</strong>
+  <%= @employee.validationOrigin %>
+</p>
+
+<p>
+  <strong>Issystemuser:</strong>
+  <%= @employee.isSystemUser %>
+</p>
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

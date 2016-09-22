@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Employees</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Dni</th>
+      <th>Username</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+      <th>Group</th>
+      <th>Datein</th>
+      <th>Dateout</th>
+      <th>Isvalid</th>
+      <th>Issystemuser</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td><%= employee.dni %></td>
+        <td><%= employee.userName %></td>
+        <td><%= employee.firstName %></td>
+        <td><%= employee.lastName %></td>
+        <td><%= employee.email %></td>
+        <td><%= employee.group_id %></td>
+        <td><%= employee.dateIn %></td>
+        <td><%= employee.dateOut %></td>
+        <td><%= employee.isValid %></td>
+        <td><%= employee.isSystemUser %></td>
+        <td><span class="btn btn-info btn-xs glyphicon glyphicon-ok text-warning"><%= link_to 'Show', employee %></span></td>
+        <td><span class="btn btn-warning btn-xs glyphicon glyphicon-wrench"><%= link_to 'Edit', edit_employee_path(employee) %></span></td>
+        <td><span class="btn btn-danger btn-xs glyphicon glyphicon-trash"><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></span></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Employee', new_employee_path %>

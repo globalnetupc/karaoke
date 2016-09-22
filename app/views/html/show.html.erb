@@ -1,0 +1,23 @@
+<h2>
+  Routes
+</h2>
+
+<p>
+  Routes match in priority from top to bottom
+</p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>route</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @routes_inspector.each do |route| %>
+      <tr>
+        <td><%= route.path %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

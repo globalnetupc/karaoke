@@ -1,0 +1,1 @@
+json.array! @group_emps, partial: 'group_emps/group_emp', as: :group_emp

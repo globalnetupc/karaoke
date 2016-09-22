@@ -1,0 +1,52 @@
+<%= form_for(box) do |f| %>
+  <% if box.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(box.errors.count, "error") %> prohibited this box from being saved:</h2>
+
+      <ul>
+      <% box.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :box_id %>
+    <%= f.text_field :box_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location_id %>
+    <%= f.text_field :location_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :score %>
+    <%= f.text_field :score %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bussy %>
+    <%= f.text_field :bussy %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

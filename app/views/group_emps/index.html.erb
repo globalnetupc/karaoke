@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Group Emps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Levelgroup</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @group_emps.each do |group_emp| %>
+      <tr>
+        <td><%= group_emp.id %></td>
+        <td><%= group_emp.levelGroup %></td>
+        <td><%= group_emp.description %></td>
+        <td><%= link_to 'Show', group_emp %></td>
+        <td><%= link_to 'Edit', edit_group_emp_path(group_emp) %></td>
+        <td><%= link_to 'Destroy', group_emp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Group Emp', new_group_emp_path %>

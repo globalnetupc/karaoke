@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @group_emp.id %>
+</p>
+
+<p>
+  <strong>Levelgroup:</strong>
+  <%= @group_emp.levelGroup %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @group_emp.description %>
+</p>
+
+<%= link_to 'Edit', edit_group_emp_path(@group_emp) %> |
+<%= link_to 'Back', group_emps_path %>
