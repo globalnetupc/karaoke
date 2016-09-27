@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   resources :cities
   resources :html
   resources :songs
+  resources :events
+  resources :locations
   resources :generes
+  resources :stocks
   root 'html#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
