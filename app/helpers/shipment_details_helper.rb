@@ -1,0 +1,2 @@
+module ShipmentDetailsHelper
+end

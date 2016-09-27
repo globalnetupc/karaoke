@@ -1,0 +1,37 @@
+<div class="page-header">
+  <%= link_to new_shipment_detail_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Shipment detail
+  <% end %>
+  <h1>Listing shipment_details</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Shipment</th>
+            <th>Product</th>
+            <th>Quanitity</th>
+            <th>Price per unit</th>
+            <th>Price</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @shipment_details) do |shipment_detail| %>
+            <td><%= shipment_detail.shipment_id %></td>
+            <td><%= shipment_detail.product_id %></td>
+            <td><%= shipment_detail.quanitity %></td>
+            <td><%= shipment_detail.price_per_unit %></td>
+            <td><%= shipment_detail.price %></td>
+            <td><%= link_to 'Show', shipment_detail %></td>
+        <td><%= link_to 'Edit', edit_shipment_detail_path(shipment_detail) %></td>
+        <td><%= link_to 'Destroy', shipment_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

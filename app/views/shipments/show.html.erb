@@ -1,0 +1,47 @@
+<div class="page-header">
+  <%= link_to shipments_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_shipment_path(@shipment), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show shipment</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Shipment:</dt>
+  <dd><%= @shipment.shipment_id %></dd>
+
+  <dt>Client:</dt>
+  <dd><%= @shipment.client_id %></dd>
+
+  <dt>Time created:</dt>
+  <dd><%= @shipment.time_created %></dd>
+
+  <dt>Shipment type:</dt>
+  <dd><%= @shipment.shipment_type_id %></dd>
+
+  <dt>Payment type:</dt>
+  <dd><%= @shipment.payment_type_id %></dd>
+
+  <dt>Shipping address:</dt>
+  <dd><%= @shipment.shipping_address %></dd>
+
+  <dt>Billing address:</dt>
+  <dd><%= @shipment.billing_address %></dd>
+
+  <dt>Products price:</dt>
+  <dd><%= @shipment.products_price %></dd>
+
+  <dt>Delivery cost:</dt>
+  <dd><%= @shipment.delivery_cost %></dd>
+
+  <dt>Discount:</dt>
+  <dd><%= @shipment.discount %></dd>
+
+  <dt>Final price:</dt>
+  <dd><%= @shipment.final_price %></dd>
+
+</dl>

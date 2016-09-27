@@ -1,0 +1,1 @@
+json.partial! "reserve_songs/reserve_song", reserve_song: @reserve_song

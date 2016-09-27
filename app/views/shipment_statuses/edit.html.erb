@@ -1,0 +1,13 @@
+<div class="page-header">
+  <%= link_to shipment_statuses_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to @shipment_status, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-info-sign"></span>
+    Show
+  <% end %>
+  <h1>Editing shipment_status</h1>
+</div>
+
+<%= render 'form' %>

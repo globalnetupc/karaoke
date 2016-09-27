@@ -1,0 +1,35 @@
+<div class="page-header">
+  <%= link_to new_payment_datum_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Payment datum
+  <% end %>
+  <h1>Listing payment_data</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Payment data</th>
+            <th>Payment type</th>
+            <th>Data name</th>
+            <th>Data type</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @payment_data) do |payment_datum| %>
+            <td><%= payment_datum.payment_data_id %></td>
+            <td><%= payment_datum.payment_type_id %></td>
+            <td><%= payment_datum.data_name %></td>
+            <td><%= payment_datum.data_type %></td>
+            <td><%= link_to 'Show', payment_datum %></td>
+        <td><%= link_to 'Edit', edit_payment_datum_path(payment_datum) %></td>
+        <td><%= link_to 'Destroy', payment_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

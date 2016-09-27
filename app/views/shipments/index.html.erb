@@ -1,0 +1,49 @@
+<div class="page-header">
+  <%= link_to new_shipment_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Shipment
+  <% end %>
+  <h1>Listing shipments</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Shipment</th>
+            <th>Client</th>
+            <th>Time created</th>
+            <th>Shipment type</th>
+            <th>Payment type</th>
+            <th>Shipping address</th>
+            <th>Billing address</th>
+            <th>Products price</th>
+            <th>Delivery cost</th>
+            <th>Discount</th>
+            <th>Final price</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @shipments) do |shipment| %>
+            <td><%= shipment.shipment_id %></td>
+            <td><%= shipment.client_id %></td>
+            <td><%= shipment.time_created %></td>
+            <td><%= shipment.shipment_type_id %></td>
+            <td><%= shipment.payment_type_id %></td>
+            <td><%= shipment.shipping_address %></td>
+            <td><%= shipment.billing_address %></td>
+            <td><%= shipment.products_price %></td>
+            <td><%= shipment.delivery_cost %></td>
+            <td><%= shipment.discount %></td>
+            <td><%= shipment.final_price %></td>
+            <td><%= link_to 'Show', shipment %></td>
+        <td><%= link_to 'Edit', edit_shipment_path(shipment) %></td>
+        <td><%= link_to 'Destroy', shipment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

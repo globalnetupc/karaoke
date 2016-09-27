@@ -1,0 +1,1 @@
+json.array! @payment_data, partial: 'payment_data/payment_datum', as: :payment_datum

@@ -1,0 +1,1 @@
+json.array! @reserve_songs, partial: 'reserve_songs/reserve_song', as: :reserve_song

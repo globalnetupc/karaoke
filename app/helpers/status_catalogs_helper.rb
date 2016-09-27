@@ -1,0 +1,2 @@
+module StatusCatalogsHelper
+end

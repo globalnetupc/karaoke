@@ -1,0 +1,43 @@
+<div class="page-header">
+  <%= link_to new_reserve_song_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Reserve song
+  <% end %>
+  <h1>Listing reserve_songs</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Reserver</th>
+            <th>Box</th>
+            <th>Song</th>
+            <th>Create time</th>
+            <th>State</th>
+            <th>Description</th>
+            <th>Rate stage</th>
+            <th>Local video</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @reserve_songs) do |reserve_song| %>
+            <td><%= reserve_song.reserver_id %></td>
+            <td><%= reserve_song.box_id %></td>
+            <td><%= reserve_song.song_id %></td>
+            <td><%= reserve_song.create_time %></td>
+            <td><%= reserve_song.state %></td>
+            <td><%= reserve_song.description %></td>
+            <td><%= reserve_song.rate_stage %></td>
+            <td><%= reserve_song.local_video %></td>
+            <td><%= link_to 'Show', reserve_song %></td>
+        <td><%= link_to 'Edit', edit_reserve_song_path(reserve_song) %></td>
+        <td><%= link_to 'Destroy', reserve_song, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

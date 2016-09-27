@@ -1,0 +1,2 @@
+json.extract! reserve_song, :id, :reserver_id, :box_id, :song_id, :create_time, :state, :description, :rate_stage, :local_video, :created_at, :updated_at
+json.url reserve_song_url(reserve_song, format: :json)

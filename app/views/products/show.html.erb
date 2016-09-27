@@ -1,0 +1,32 @@
+<div class="page-header">
+  <%= link_to products_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_product_path(@product), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show product</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Product:</dt>
+  <dd><%= @product.product_id %></dd>
+
+  <dt>Product name:</dt>
+  <dd><%= @product.product_name %></dd>
+
+  <dt>Product description:</dt>
+  <dd><%= @product.product_description %></dd>
+
+  <dt>Product type:</dt>
+  <dd><%= @product.product_type_id %></dd>
+
+  <dt>Unit:</dt>
+  <dd><%= @product.unit %></dd>
+
+  <dt>Price per unit:</dt>
+  <dd><%= @product.price_per_unit %></dd>
+
+</dl>

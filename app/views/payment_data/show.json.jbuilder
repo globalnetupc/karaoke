@@ -1,0 +1,1 @@
+json.partial! "payment_data/payment_datum", payment_datum: @payment_datum

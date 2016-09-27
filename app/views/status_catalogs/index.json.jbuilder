@@ -1,0 +1,1 @@
+json.array! @status_catalogs, partial: 'status_catalogs/status_catalog', as: :status_catalog

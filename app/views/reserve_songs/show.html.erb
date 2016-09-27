@@ -1,0 +1,38 @@
+<div class="page-header">
+  <%= link_to reserve_songs_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_reserve_song_path(@reserve_song), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show reserve_song</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Reserver:</dt>
+  <dd><%= @reserve_song.reserver_id %></dd>
+
+  <dt>Box:</dt>
+  <dd><%= @reserve_song.box_id %></dd>
+
+  <dt>Song:</dt>
+  <dd><%= @reserve_song.song_id %></dd>
+
+  <dt>Create time:</dt>
+  <dd><%= @reserve_song.create_time %></dd>
+
+  <dt>State:</dt>
+  <dd><%= @reserve_song.state %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @reserve_song.description %></dd>
+
+  <dt>Rate stage:</dt>
+  <dd><%= @reserve_song.rate_stage %></dd>
+
+  <dt>Local video:</dt>
+  <dd><%= @reserve_song.local_video %></dd>
+
+</dl>

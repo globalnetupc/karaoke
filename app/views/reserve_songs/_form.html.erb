@@ -1,0 +1,68 @@
+<%= form_for(@reserve_song, html: { class: "form-horizontal", role: "form" }) do |f| %>
+  <% if @reserve_song.errors.any? %>
+    <div class="alert alert-danger alert-dismissable" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4><%= pluralize(@reserve_song.errors.count, "error") %> prohibited this reserve_song from being saved:</h4>
+
+      <ul>
+      <% @reserve_song.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :reserver_id, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :reserver_id, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :box_id, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :box_id, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :song_id, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :song_id, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :create_time, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :create_time, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :state, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :state, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :description, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :description, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :rate_stage, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :rate_stage, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :local_video, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :local_video, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

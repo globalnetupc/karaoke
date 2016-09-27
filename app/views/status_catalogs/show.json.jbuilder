@@ -1,0 +1,1 @@
+json.partial! "status_catalogs/status_catalog", status_catalog: @status_catalog
