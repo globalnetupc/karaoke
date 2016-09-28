@@ -4,16 +4,30 @@ Rails.application.routes.draw do
   get 'html/index'
 
   #get '/index', :to => redirect('/html/index')
-  resources :employees
-  resources :group_emps
-  resources :countries
+  
+  resources :boxes
   resources :cities
-  resources :html
-  resources :songs
+  resources :countries
+  resources :employees
   resources :events
-  resources :locations
   resources :generes
+  resources :group_emps
+  resources :html
+  resources :locations
+  resources :payment_data
+  resources :payment_details
+  resources :payment_types
+  resources :product_types
+  resources :products
+  resources :reserve_songs
+  resources :shipment_details
+  resources :shipment_statuses
+  resources :shipment_types
+  resources :shipments
+  resources :songs
+  resources :status_catalogs
   resources :stocks
+  
   root 'html#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
