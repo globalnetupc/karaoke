@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
   get 'application_karaoke/index', :to => redirect('karaoke_app/readme.html')
 
   get 'html/index'
@@ -27,6 +28,8 @@ Rails.application.routes.draw do
   resources :songs
   resources :status_catalogs
   resources :stocks
+  
+  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
   
   root 'html#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

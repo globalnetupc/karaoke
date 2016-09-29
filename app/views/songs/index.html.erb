@@ -35,8 +35,8 @@
             <td><%= song.code %></td>
             <td><%= song.rate %></td>
             <td><%= link_to 'Show', song %></td>
-        <td><%= link_to 'Edit', edit_song_path(song) %></td>
-        <td><%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><a href="karaoke_app/index.html?videoFile=<%= song.name%>.mp4&ipAddress=127.0.0.1" class="button">Pedir</a></td>
+        <!--<td><%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       <% end %>
     </tbody>
   </table>

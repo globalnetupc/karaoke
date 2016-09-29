@@ -11,8 +11,12 @@ gem 'bootstrap-sass', '~> 3.3', '>=3.3.6'
 gem 'bootstrap-generators', '~> 3.3.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+
+gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook','1.4.0'
+gem 'omniauth-twitter'
 #gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
