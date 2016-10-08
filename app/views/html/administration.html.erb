@@ -1,17 +1,63 @@
-<tr class='route_row' data-helper='path'>
-  <td data-route-name='<%= route[:name] %>'>
-    <% if route[:name].present? %>
-      <%= route[:name] %><span class='helper'>_path</span>
-    <% end %>
-  </td>
-  <td>
-    <%= route[:verb] %>
-  </td>
-  <td data-route-path='<%= route[:path] %>'>
-    <%= route[:path] %>
-  </td>
-  <td>
-    <%=simple_format route[:reqs] %>
-  </td>
-</tr>
-
+<div class="container">
+    <ul class="fordtreeview list-group col-md-4">
+  <li class="list-group-item"><input type="text" class="form-control menufilter" placeholder="Search menu"/></li>
+  <li class="list-group-item">
+    <span class="hasSub"><i class="glyphicon glyphicon-folder-close"></i> Indexes</span>
+    <ul class="list-group expanded">
+      <li class="list-group-item">
+        <span class="hasSub"><a href="/html/administration"><i class="glyphicon glyphicon-th-list"></i>Administration</a></span>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="/employees"><i class="glyphicon glyphicon-log-in"></i> Employees</a></li>
+          <li class="list-group-item"><a href="/group_emps"><i class="glyphicon glyphicon-log-in"></i> Groups</a></li>
+          <li class="list-group-item"><a href="/locations"><i class="glyphicon glyphicon-log-in"></i> Locations</a></li>
+          <li class="list-group-item"><a href="/products"><i class="glyphicon glyphicon-log-in"></i> Products</a></li>
+          <li class="list-group-item">
+            <span class="hasSub"><a href="/boxes"><i class="glyphicon glyphicon-log-in"></i> Boxes</a></span>
+            <ul class="list-group">
+              <li class="list-group-item"><i class="glyphicon glyphicon-collapse-up"></i> Managment boxes</li>
+              <li class="list-group-item"><i class="glyphicon glyphicon-collapse-up"></i> Bookings</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Managment Events</li>
+      <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Managment </li>
+    </ul>
+  </li>
+  <li class="list-group-item"><i class="glyphicon glyphicon-cloud"></i> Menü Öğesi 0</li>
+  <li class="list-group-item"><a href="#"><i class="glyphicon glyphicon-globe"></i> Menü Öğesi 2</a></li>
+  <li class="list-group-item"><i class="glyphicon glyphicon-cloud"></i> Menü Öğesi 3</li>
+</ul>
+ <ul class="fordtreeview list-group col-md-4">
+   <li class="list-group-item"><input type="text" class="form-control menufilter" placeholder="Search menu"/></li>
+  <li class="list-group-item">
+    <span class="hasSub"><i class="glyphicon glyphicon-folder-close"></i> Indexes</span>
+    <ul class="list-group expanded">
+      <li class="list-group-item">
+        <span class="hasSub"><a href="/html/administration"><i class="glyphicon glyphicon-th-list"></i>Administration</a></span>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="hasSub"><i class="glyphicon glyphicon-folder-close"></i> Songs</span>
+            <ul class="list-group">
+              <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Managment songs</li>
+              <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Schedules</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Managment Events</li>
+      <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Managment </li>
+    </ul>
+  </li>
+ </ul>
+ <ul class="fordtreeview list-group col-md-4">
+   <li class="list-group-item"><input type="text" class="form-control menufilter" placeholder="Search menu"/></li>
+   <li class="list-group-item">
+            <span class="hasSub"><i class="glyphicon glyphicon-th-list"></i> Bills</span>
+            <ul class="list-group">
+              <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Managment bills</li>
+              <li class="list-group-item"><i class="glyphicon glyphicon-file"></i> Pays</li>
+            </ul>
+    </li>
+ </ul>
+</div>

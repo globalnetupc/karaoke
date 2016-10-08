@@ -5,6 +5,11 @@ class SongsController < ApplicationController
   # GET /songs.json
   def index
     @songs = Song.all
+    	if params[:search]
+    	@songs = Song.search(params[:search]).order("name DESC")
+  		else
+    	@songs = Song.all.order('name DESC')
+  	end
   end
 
   # GET /songs/1
