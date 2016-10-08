@@ -11,7 +11,7 @@ gem 'bootstrap-sass', '~> 3.3', '>=3.3.6'
 gem 'bootstrap-generators', '~> 3.3.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-
+gem 'carrierwave', '~> 0.9'
 
 gem 'devise'
 gem 'omniauth'

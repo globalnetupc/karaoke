@@ -1,0 +1,19 @@
+<% if !@video.errors.empty? %>
+   <div class = "alert alert-error">
+      <ul>
+         <% @video.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+         <% end %>
+      </ul>
+   </div> <% end %> <div class = "well">
+   <%= form_for @video, html: { multipart: true } do |f| %>
+      <p><%= f.label :name %></p>
+      <p><%= f.text_field :name %></p>
+      <p><%= f.label :attachment %></p>
+      <p><%= f.file_field :attachment %></p>
+      <br/>
+      <p><%= f.submit "Save", class: "btn btn-primary" %></p>
+   <% end %>
+   <br/>
+   <a href="/videos">Go to videos</a>
+</div>
