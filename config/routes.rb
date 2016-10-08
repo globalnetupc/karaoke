@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'application_karaoke/index', :to => redirect('karaoke_app/readme.html')
 
   get 'html/index'
+  get 'html/administration'
 
   #get '/index', :to => redirect('/html/index')
   
@@ -13,7 +14,6 @@ Rails.application.routes.draw do
   resources :events
   resources :generes
   resources :group_emps
-  resources :html
   resources :locations
   resources :payment_data
   resources :payment_details
