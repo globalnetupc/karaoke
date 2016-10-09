@@ -16,3 +16,6 @@ Product.create(product_name: 'Pilsen', product_description: 'Beer', product_type
 Product.create(product_name: 'Pisco Sour - Limon', product_description: 'Drink', product_type_id: 1, unit: 10, price_per_unit: 10 )
 Product.create(product_name: 'Pisco Sour - Maracuya', product_description: 'Drink', product_type_id: 1, unit: 10, price_per_unit: 10 )
 Product.create(product_name: 'Pisco Sour - Acholado', product_description: 'Drink', product_type_id: 1, unit: 10, price_per_unit: 10 )
+
+
+Location.create(name: 'OpenMic-Monterrico', description: 'Local monterrico', address: "frente upc", phone: "935395381", coordenate: "1.2222222; 1.3333333", management: 1, city_id: 1 )
