@@ -19,3 +19,6 @@ Product.create(product_name: 'Pisco Sour - Acholado', product_description: 'Drin
 
 
 Location.create(name: 'OpenMic-Monterrico', description: 'Local monterrico', address: "frente upc", phone: "935395381", coordenate: "1.2222222; 1.3333333", management: 1, city_id: 1 )
+
+Song.create(name: "morena_mia-miguel_bose", singer_band: "Miguel Bose", description: "Morena Mia - Miguel Bose", duration: 5, genere_id: 1, code: "MMIA-MBOSE-1", rate: 5)
+Song.create(name: "forma_de_ser-autenticos_decadentes", singer_band: "Autenticos Decadentes", description: "Forma de Ser - Autenticos Decadentes", duration: 5, genere_id: 1, code: "FDS-ATDEC-1", rate: 5)
