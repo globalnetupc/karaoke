@@ -16,3 +16,5 @@
 //= require_tree ./html
 //= require bootstrap
 //= require search_song
+//= require bootstrap-datepicker
+//= require bootstrap-timepicker
